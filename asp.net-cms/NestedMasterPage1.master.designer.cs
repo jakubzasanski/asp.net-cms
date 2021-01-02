@@ -11,52 +11,52 @@ namespace asp.net_cms
 {
 
 
-    public partial class index
+    public partial class NestedMasterPage1
     {
 
         /// <summary>
-        /// Kontrolka form1.
+        /// Kontrolka ContentPlaceHolder3.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder3;
 
         /// <summary>
-        /// Kontrolka Button1.
+        /// Kontrolka ContentPlaceHolder4.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder4;
 
         /// <summary>
-        /// Kontrolka Label1.
+        /// Kontrolka ContentPlaceHolder5.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder5;
 
         /// <summary>
-        /// Kontrolka SqlDataSource1.
+        /// Kontrolka ContentPlaceHolder7.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder7;
 
         /// <summary>
-        /// Kontrolka GridView1.
+        /// Kontrolka ContentPlaceHolder6.
         /// </summary>
         /// <remarks>
         /// Pole generowane automatycznie.
         /// By zmodyfikować deklaracje pola przenieś ją z pliku projektanta do pliku codebehind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder6;
     }
 }

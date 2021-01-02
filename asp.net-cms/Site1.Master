@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="asp.net_cms.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+      
+        </div>
+
+        <div class="main">
+            <div class="header">
+
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Wiadomości.png" />
+
+            </div>        
+            <div class="content">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+
+            </div>       
+            <div class="footer">Copyright</div>      
+            <div> </div>   
+            <div></div>
+       </div>
+    </form>
+</body>
+</html>
