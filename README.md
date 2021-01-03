@@ -11,7 +11,7 @@
   
   #### Sposób użycia
   
-  1. Otwórz folder projektu w konsoli cmd(Wymagane uprawnienia administratora).
+  1. Otwórz folder projektu w konsoli cmd (Wymagane uprawnienia administratora).
   2. Przy pierwszym użyciu zainstaluj paczki użyj komendy
    ```javascript
     npm i
