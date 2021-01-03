@@ -7,6 +7,7 @@
   #### Wymagania
   
   1. NODEJS 12.20 LTS
+  2. Jeśli używasz Visual Studio WYŁĄCZ "Programowanie za pomocą oprogramowania Node.js"
   
   #### Komendy
   
