@@ -1,8 +1,7 @@
 ﻿@import "./_config";
 @import "./_reset";
+@import "./_utilities";
 
-// CSS FILE USEED ACCROS WEBSITE
 
-body{
-    background-color: $color-primary;
-}
+@import "./_header";
+// CSS FILE USED ACCROS WEBSITE

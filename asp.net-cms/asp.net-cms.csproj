@@ -80,7 +80,10 @@
     </Content>
     <Content Include="assets\css\index.html" />
     <Content Include="assets\images\index.html" />
+    <Content Include="assets\images\logo.png" />
     <Content Include="assets\scss\index.html" />
+    <Content Include="assets\scss\_components\index.html" />
+    <Content Include="assets\scss\_utilities\index.html" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
     <Content Include="Web.config" />
@@ -94,7 +97,6 @@
     <Content Include="WebForm7.aspx" />
     <Content Include="WebForm8.aspx" />
     <Content Include="WebForm9.aspx" />
-    <Content Include="Wiadomości.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -196,9 +198,11 @@
   <ItemGroup>
     <Content Include="NestedMasterPage1.master" />
     <Content Include="package.json" />
-    <Content Include="assets\scss\_config.scss" />
+    <Content Include="assets\scss\_utilities\_config.scss" />
     <Content Include="assets\scss\style.scss" />
-    <Content Include="assets\scss\_reset.scss" />
+    <Content Include="assets\scss\_utilities\_reset.scss" />
+    <Content Include="assets\scss\_utilities\_helpers.scss" />
+    <Content Include="assets\scss\_components\_header.scss" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
     <None Include="Web.Debug.config">
