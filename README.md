@@ -9,13 +9,6 @@
   1. NODEJS 12.20 LTS
   2. Jeśli używasz Visual Studio WYŁĄCZ "Programowanie za pomocą oprogramowania Node.js"
   
-  #### Komendy
-  
-  ```javascript
-    gulp watch
-    gulp compile-scss
-  ```
-  
   #### Sposób użycia
   
   1. Otwórz folder projektu w konsoli cmd(Wymagane uprawnienia administratora).
@@ -25,3 +18,9 @@
   ```
   3. Wpisz komendę.
   
+  #### Komendy
+  
+  ```javascript
+    gulp watch
+    gulp compile-scss
+  ```
