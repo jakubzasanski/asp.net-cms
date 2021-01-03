@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="news.master.cs" Inherits="asp.net_cms.news" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="CSS" runat="server">
+     <link href="./assets/css/news.css" rel="stylesheet" />
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="-flexRow">
+        <div class="-columnLeft">
+            menu
+        </div>
+        <div class="newsContainer">
+            <div class="newsContainer__photo">
+                <asp:ContentPlaceHolder ID="MainPhoto" runat="server"></asp:ContentPlaceHolder>
+            </div>
+           
+            <div class="header">
+                <asp:ContentPlaceHolder ID="Title" runat="server"></asp:ContentPlaceHolder>
+            </div>
+
+            <div>
+                <asp:ContentPlaceHolder ID="Content" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+</asp:Content>

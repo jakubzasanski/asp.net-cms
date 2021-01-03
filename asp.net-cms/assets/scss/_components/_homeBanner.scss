@@ -1,0 +1,37 @@
+﻿@import "../_utilities/_config";
+
+.homeBanner{
+    position: relative;
+    margin-bottom: 20px;
+
+    img{
+        width: 100%;
+        display: block;
+    }
+
+    &::before{
+        content: ""; 
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #353535;
+        opacity: .2;
+    }
+
+    &__text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #FFF;
+        text-transform: uppercase;
+        font-size: 38px;
+        font-weight: 200;
+        letter-spacing: 4px;
+    }
+}

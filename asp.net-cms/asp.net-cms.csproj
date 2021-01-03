@@ -79,28 +79,47 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="assets\css\index.html" />
+    <Content Include="assets\images\background.jpg" />
+    <Content Include="assets\images\favicon.png" />
     <Content Include="assets\images\index.html" />
     <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\news\foto_main\news_3.jpg" />
+    <Content Include="assets\images\news\foto_main\index.html" />
+    <Content Include="assets\images\news\foto_main\news_1.jpg" />
+    <Content Include="assets\images\news\foto_main\news_2.jpg" />
+    <Content Include="assets\images\news\foto_mini\index.html" />
+    <Content Include="assets\images\news\foto_mini\news_3.jpg" />
+    <Content Include="assets\images\news\foto_mini\news_1.jpg" />
+    <Content Include="assets\images\news\foto_mini\news_2.jpg" />
+    <Content Include="assets\images\news\index.html" />
     <Content Include="assets\scss\index.html" />
     <Content Include="assets\scss\_components\index.html" />
     <Content Include="assets\scss\_utilities\index.html" />
     <Content Include="Global.asax" />
+    <Content Include="admin.aspx" />
     <Content Include="index.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm1.aspx" />
-    <Content Include="WebForm10.aspx" />
-    <Content Include="WebForm2.aspx" />
-    <Content Include="WebForm3.aspx" />
-    <Content Include="WebForm4.aspx" />
-    <Content Include="WebForm5.aspx" />
-    <Content Include="WebForm6.aspx" />
-    <Content Include="WebForm7.aspx" />
-    <Content Include="WebForm8.aspx" />
-    <Content Include="WebForm9.aspx" />
+    <Content Include="bezprzewodowe-ladowanie-iphonea.aspx" />
+    <Content Include="technologia-micro-led.aspx" />
+    <Content Include="placisz-za-youtube-premium.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.master.cs">
+      <DependentUpon>home.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.master.designer.cs">
+      <DependentUpon>home.master</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -109,102 +128,60 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="NestedMasterPage1.master.cs">
-      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+    <Compile Include="news.master.cs">
+      <DependentUpon>news.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="NestedMasterPage1.master.designer.cs">
-      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+    <Compile Include="news.master.designer.cs">
+      <DependentUpon>news.master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="Global.Master.cs">
+      <DependentUpon>Global.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="Global.Master.designer.cs">
+      <DependentUpon>Global.Master</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="bezprzewodowe-ladowanie-iphonea.aspx.cs">
+      <DependentUpon>bezprzewodowe-ladowanie-iphonea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="bezprzewodowe-ladowanie-iphonea.aspx.designer.cs">
+      <DependentUpon>bezprzewodowe-ladowanie-iphonea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm10.aspx.cs">
-      <DependentUpon>WebForm10.aspx</DependentUpon>
+    <Compile Include="technologia-micro-led.aspx.cs">
+      <DependentUpon>technologia-micro-led.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm10.aspx.designer.cs">
-      <DependentUpon>WebForm10.aspx</DependentUpon>
+    <Compile Include="technologia-micro-led.aspx.designer.cs">
+      <DependentUpon>technologia-micro-led.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
+    <Compile Include="placisz-za-youtube-premium.aspx.cs">
+      <DependentUpon>placisz-za-youtube-premium.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm3.aspx.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm3.aspx.designer.cs">
-      <DependentUpon>WebForm3.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm4.aspx.cs">
-      <DependentUpon>WebForm4.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm4.aspx.designer.cs">
-      <DependentUpon>WebForm4.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm5.aspx.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm5.aspx.designer.cs">
-      <DependentUpon>WebForm5.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm6.aspx.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm6.aspx.designer.cs">
-      <DependentUpon>WebForm6.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm7.aspx.cs">
-      <DependentUpon>WebForm7.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm7.aspx.designer.cs">
-      <DependentUpon>WebForm7.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm8.aspx.cs">
-      <DependentUpon>WebForm8.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm8.aspx.designer.cs">
-      <DependentUpon>WebForm8.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm9.aspx.cs">
-      <DependentUpon>WebForm9.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm9.aspx.designer.cs">
-      <DependentUpon>WebForm9.aspx</DependentUpon>
+    <Compile Include="placisz-za-youtube-premium.aspx.designer.cs">
+      <DependentUpon>placisz-za-youtube-premium.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="NestedMasterPage1.master" />
     <Content Include="package.json" />
     <Content Include="assets\scss\_utilities\_config.scss" />
     <Content Include="assets\scss\style.scss" />
     <Content Include="assets\scss\_utilities\_reset.scss" />
     <Content Include="assets\scss\_utilities\_helpers.scss" />
     <Content Include="assets\scss\_components\_header.scss" />
+    <Content Include="home.master" />
+    <Content Include="assets\scss\_components\_footer.scss" />
+    <Content Include="assets\scss\home.scss" />
+    <Content Include="assets\scss\_components\_homeBanner.scss" />
+    <Content Include="assets\scss\_utilities\_theme.scss" />
+    <Content Include="assets\scss\_components\_news.scss" />
+    <Content Include="news.master" />
+    <Content Include="assets\scss\news.scss" />
     <None Include="packages.config" />
-    <Content Include="Site1.Master" />
+    <Content Include="Global.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

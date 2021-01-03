@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="home.master.cs" Inherits="asp.net_cms.home" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="CSS" runat="server">
+     <link href="./assets/css/home.css" rel="stylesheet" />
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="homeBanner">
+        <div class="homeBanner__img">
+            <asp:ContentPlaceHolder ID="homebanner__img" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="homeBanner__text">
+            <asp:ContentPlaceHolder ID="homebanner__text" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+    <div>
+        <div class="header">
+            Aktualności
+        </div>
+
+        <div class="newsWrap">
+            <div class="news">
+                <div class="news__img">
+                    <asp:ContentPlaceHolder ID="NewsPhoto_1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__date">
+                   <asp:ContentPlaceHolder ID="NewsDate_1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__header">
+                    <asp:ContentPlaceHolder ID="NewsTitle_1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__desc">
+                    <asp:ContentPlaceHolder ID="NewsShortDesc_1" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="news__img">
+                    <asp:ContentPlaceHolder ID="NewsPhoto_2" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__date">
+                    <asp:ContentPlaceHolder ID="NewsDate_2" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__header">
+                    <asp:ContentPlaceHolder ID="NewsTitle_2" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__desc">
+                    <asp:ContentPlaceHolder ID="NewsShortDesc_2" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="news__img">
+                    <asp:ContentPlaceHolder ID="NewsPhoto_3" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__date">
+                    <asp:ContentPlaceHolder ID="NewsDate_3" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__header">
+                    <asp:ContentPlaceHolder ID="NewsTitle_3" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__desc">
+                    <asp:ContentPlaceHolder ID="NewsShortDesc_3" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</asp:Content>
+

@@ -1,0 +1,43 @@
+﻿@import "../_utilities/_config";
+
+.siteFooterWrap {
+    border-top: 1px solid $color-border;
+    margin-top: 55px;
+}
+
+.siteFooter {
+    padding: 50px 0;
+    display: flex;
+}
+
+.siteFooter > *:not(:last-child) {
+    margin-right: 80px;
+}
+
+.siteFooterDesc {
+    width: 40%;
+}
+
+.siteFooterDesc__img {
+    height: 55px;
+    margin-bottom: 15px;
+}
+
+.siteFooterDesc__desc {
+}
+
+.siteFooterSites {
+    flex-grow: 1;
+}
+
+.siteFooterSites__header {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.siteFooterSites li {
+    color: $color-content-light;
+    margin-bottom: 10px;
+}
