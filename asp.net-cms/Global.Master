@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Global.Master.cs" Inherits="asp.net_cms.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title></title>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+        <link href="./assets/css/style.css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png" />
+    </head>
+
+    <body>
+        <form id="form1" runat="server">
+            <div class="topWrap">
+                <div class="top -siteContainer -flexRow">
+                    <a href="./index.aspx" class="topLogo -columnLeft">
+                        <img src="assets/images/logo.png" alt="Logo portal informacyjny" />
+                    </a>
+                    <div class="topNavbar -flexRow">
+                        <a href="/WebForm1.aspx" class="topNavbar__item">Aktualności</a>
+                        <a href="/WebForm2.aspx" class="topNavbar__item">cos</a>
+                        <a href="/WebForm3.aspx" class="topNavbar__item">Redakcja</a>
+                        <a href="/WebForm4.aspx" class="topNavbar__item">O nas</a>
+                        <a href="/WebForm5.aspx" class="topNavbar__item">Kontakt</a>
+                        <a href="/admin.aspx" class="topNavbar__item">TMP Admin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="-siteContainer">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+           </div>
+
+            <div class="footer">
+                <div class="-siteContainer">
+                   footer
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

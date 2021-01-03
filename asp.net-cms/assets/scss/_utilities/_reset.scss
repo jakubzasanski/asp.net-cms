@@ -1,6 +1,11 @@
 ﻿@import "./_config";
 // RESET BROWSER STYLES
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 img{
     max-height: 100%;
     max-width: 100%;

@@ -1,0 +1,12 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="home.master.cs" Inherits="asp.net_cms.home" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div>
+        struktrua
+        <div>
+            wpis
+            <asp:ContentPlaceHolder ID="NewsTitle" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>
+

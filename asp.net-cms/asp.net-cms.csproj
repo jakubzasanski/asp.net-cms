@@ -79,16 +79,17 @@
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
     <Content Include="assets\css\index.html" />
+    <Content Include="assets\images\favicon.png" />
     <Content Include="assets\images\index.html" />
     <Content Include="assets\images\logo.png" />
     <Content Include="assets\scss\index.html" />
     <Content Include="assets\scss\_components\index.html" />
     <Content Include="assets\scss\_utilities\index.html" />
     <Content Include="Global.asax" />
+    <Content Include="admin.aspx" />
     <Content Include="index.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
-    <Content Include="WebForm10.aspx" />
     <Content Include="WebForm2.aspx" />
     <Content Include="WebForm3.aspx" />
     <Content Include="WebForm4.aspx" />
@@ -101,6 +102,20 @@
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.master.cs">
+      <DependentUpon>home.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.master.designer.cs">
+      <DependentUpon>home.master</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -117,12 +132,12 @@
       <DependentUpon>NestedMasterPage1.master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="Global.Master.cs">
+      <DependentUpon>Global.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
+    <Compile Include="Global.Master.designer.cs">
+      <DependentUpon>Global.Master</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -130,13 +145,6 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm10.aspx.cs">
-      <DependentUpon>WebForm10.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm10.aspx.designer.cs">
-      <DependentUpon>WebForm10.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
@@ -203,8 +211,9 @@
     <Content Include="assets\scss\_utilities\_reset.scss" />
     <Content Include="assets\scss\_utilities\_helpers.scss" />
     <Content Include="assets\scss\_components\_header.scss" />
+    <Content Include="home.master" />
     <None Include="packages.config" />
-    <Content Include="Site1.Master" />
+    <Content Include="Global.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
