@@ -8,50 +8,59 @@
 </head>
 <body>
 
-    HELLO WORLD!
+    <p>
+        Strefa zmian administratora</p>
     <form id="form1" runat="server">
         <div>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Admin_table] WHERE [Id] = @original_Id AND (([title ] = @original_title_) OR ([title ] IS NULL AND @original_title_ IS NULL)) AND (([paragraf1] = @original_paragraf1) OR ([paragraf1] IS NULL AND @original_paragraf1 IS NULL)) AND (([paragraf2] = @original_paragraf2) OR ([paragraf2] IS NULL AND @original_paragraf2 IS NULL)) AND (([paragraf3] = @original_paragraf3) OR ([paragraf3] IS NULL AND @original_paragraf3 IS NULL)) AND (([paragraf4] = @original_paragraf4) OR ([paragraf4] IS NULL AND @original_paragraf4 IS NULL)) AND (([img] = @original_img) OR ([img] IS NULL AND @original_img IS NULL))" InsertCommand="INSERT INTO [Admin_table] ([Id], [title ], [paragraf1], [paragraf2], [paragraf3], [paragraf4], [img]) VALUES (@Id, @title_, @paragraf1, @paragraf2, @paragraf3, @paragraf4, @img)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Admin_table]" UpdateCommand="UPDATE [Admin_table] SET [title ] = @title_, [paragraf1] = @paragraf1, [paragraf2] = @paragraf2, [paragraf3] = @paragraf3, [paragraf4] = @paragraf4, [img] = @img WHERE [Id] = @original_Id AND (([title ] = @original_title_) OR ([title ] IS NULL AND @original_title_ IS NULL)) AND (([paragraf1] = @original_paragraf1) OR ([paragraf1] IS NULL AND @original_paragraf1 IS NULL)) AND (([paragraf2] = @original_paragraf2) OR ([paragraf2] IS NULL AND @original_paragraf2 IS NULL)) AND (([paragraf3] = @original_paragraf3) OR ([paragraf3] IS NULL AND @original_paragraf3 IS NULL)) AND (([paragraf4] = @original_paragraf4) OR ([paragraf4] IS NULL AND @original_paragraf4 IS NULL)) AND (([img] = @original_img) OR ([img] IS NULL AND @original_img IS NULL))">
+                <DeleteParameters>
+                    <asp:Parameter Name="original_Id" Type="Int32" />
+                    <asp:Parameter Name="original_title_" Type="String" />
+                    <asp:Parameter Name="original_paragraf1" Type="String" />
+                    <asp:Parameter Name="original_paragraf2" Type="String" />
+                    <asp:Parameter Name="original_paragraf3" Type="String" />
+                    <asp:Parameter Name="original_paragraf4" Type="String" />
+                    <asp:Parameter Name="original_img" Type="String" />
+                </DeleteParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="Id" Type="Int32" />
+                    <asp:Parameter Name="title_" Type="String" />
+                    <asp:Parameter Name="paragraf1" Type="String" />
+                    <asp:Parameter Name="paragraf2" Type="String" />
+                    <asp:Parameter Name="paragraf3" Type="String" />
+                    <asp:Parameter Name="paragraf4" Type="String" />
+                    <asp:Parameter Name="img" Type="String" />
+                </InsertParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="title_" Type="String" />
+                    <asp:Parameter Name="paragraf1" Type="String" />
+                    <asp:Parameter Name="paragraf2" Type="String" />
+                    <asp:Parameter Name="paragraf3" Type="String" />
+                    <asp:Parameter Name="paragraf4" Type="String" />
+                    <asp:Parameter Name="img" Type="String" />
+                    <asp:Parameter Name="original_Id" Type="Int32" />
+                    <asp:Parameter Name="original_title_" Type="String" />
+                    <asp:Parameter Name="original_paragraf1" Type="String" />
+                    <asp:Parameter Name="original_paragraf2" Type="String" />
+                    <asp:Parameter Name="original_paragraf3" Type="String" />
+                    <asp:Parameter Name="original_paragraf4" Type="String" />
+                    <asp:Parameter Name="original_img" Type="String" />
+                </UpdateParameters>
+            </asp:SqlDataSource>
+            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
+                <Columns>
+                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
+                    <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
+                    <asp:BoundField DataField="title " HeaderText="title " SortExpression="title " />
+                    <asp:BoundField DataField="paragraf1" HeaderText="paragraf1" SortExpression="paragraf1" />
+                    <asp:BoundField DataField="paragraf2" HeaderText="paragraf2" SortExpression="paragraf2" />
+                    <asp:BoundField DataField="paragraf3" HeaderText="paragraf3" SortExpression="paragraf3" />
+                    <asp:BoundField DataField="paragraf4" HeaderText="paragraf4" SortExpression="paragraf4" />
+                    <asp:BoundField DataField="img" HeaderText="img" SortExpression="img" />
+                </Columns>
+            </asp:GridView>
         </div>
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" Width="280px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Table] WHERE [Id] = @original_Id AND (([imie] = @original_imie) OR ([imie] IS NULL AND @original_imie IS NULL)) AND (([nazwisko] = @original_nazwisko) OR ([nazwisko] IS NULL AND @original_nazwisko IS NULL)) AND (([login] = @original_login) OR ([login] IS NULL AND @original_login IS NULL)) AND (([haslo] = @original_haslo) OR ([haslo] IS NULL AND @original_haslo IS NULL))" InsertCommand="INSERT INTO [Table] ([Id], [imie], [nazwisko], [login], [haslo]) VALUES (@Id, @imie, @nazwisko, @login, @haslo)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Table]" UpdateCommand="UPDATE [Table] SET [imie] = @imie, [nazwisko] = @nazwisko, [login] = @login, [haslo] = @haslo WHERE [Id] = @original_Id AND (([imie] = @original_imie) OR ([imie] IS NULL AND @original_imie IS NULL)) AND (([nazwisko] = @original_nazwisko) OR ([nazwisko] IS NULL AND @original_nazwisko IS NULL)) AND (([login] = @original_login) OR ([login] IS NULL AND @original_login IS NULL)) AND (([haslo] = @original_haslo) OR ([haslo] IS NULL AND @original_haslo IS NULL))">
-            <DeleteParameters>
-                <asp:Parameter Name="original_Id" Type="Int32" />
-                <asp:Parameter Name="original_imie" Type="String" />
-                <asp:Parameter Name="original_nazwisko" Type="String" />
-                <asp:Parameter Name="original_login" Type="String" />
-                <asp:Parameter Name="original_haslo" Type="String" />
-            </DeleteParameters>
-            <InsertParameters>
-                <asp:Parameter Name="Id" Type="Int32" />
-                <asp:Parameter Name="imie" Type="String" />
-                <asp:Parameter Name="nazwisko" Type="String" />
-                <asp:Parameter Name="login" Type="String" />
-                <asp:Parameter Name="haslo" Type="String" />
-            </InsertParameters>
-            <UpdateParameters>
-                <asp:Parameter Name="imie" Type="String" />
-                <asp:Parameter Name="nazwisko" Type="String" />
-                <asp:Parameter Name="login" Type="String" />
-                <asp:Parameter Name="haslo" Type="String" />
-                <asp:Parameter Name="original_Id" Type="Int32" />
-                <asp:Parameter Name="original_imie" Type="String" />
-                <asp:Parameter Name="original_nazwisko" Type="String" />
-                <asp:Parameter Name="original_login" Type="String" />
-                <asp:Parameter Name="original_haslo" Type="String" />
-            </UpdateParameters>
-        </asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
-            <Columns>
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
-                <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
-                <asp:BoundField DataField="imie" HeaderText="imie" SortExpression="imie" />
-                <asp:BoundField DataField="nazwisko" HeaderText="nazwisko" SortExpression="nazwisko" />
-                <asp:BoundField DataField="login" HeaderText="login" SortExpression="login" />
-                <asp:BoundField DataField="haslo" HeaderText="haslo" SortExpression="haslo" />
-            </Columns>
-        </asp:GridView>
-    </form>
+        </form>
 </body>
 </html>
