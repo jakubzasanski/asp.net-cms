@@ -3,24 +3,26 @@
     <asp:DataList ID="DataList3" runat="server" DataSourceID="SqlDataSource3">
         <ItemTemplate>
             
-           <img src="assets/images/news/foto_main/<%# Eval("img") %>" /> <asp:Label ID="imgLabel" runat="server" Text='' />
+             <img src="assets/images/news/foto_main/<%# Eval("image") %>" /> <asp:Label ID="imageLabel" runat="server" Text='' />
             <br />
 <br />
         </ItemTemplate>
     </asp:DataList>
-    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [img] FROM [Admin_table] WHERE [id] = 1"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [image] FROM [Table] WHERE [id] = 1"></asp:SqlDataSource>
 &nbsp;
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Title" runat="server">
     <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource2">
         <ItemTemplate>
             
+            
+            
             <asp:Label ID="title_Label" runat="server" Text='<%# Eval("title_") %>' />
             <br />
 <br />
         </ItemTemplate>
     </asp:DataList>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [title ] AS title_ FROM [Admin_table] WHERE [id]=1"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [title ] AS title_ FROM [Table] WHERE [id]=1"></asp:SqlDataSource>
 &nbsp;
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Content" runat="server">
@@ -45,5 +47,5 @@
 <br />
         </ItemTemplate>
     </asp:DataList>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1], [paragraf2], [paragraf3], [paragraf4] FROM [Admin_table] WHERE [id] = 1"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1], [paragraf2], [paragraf3], [paragraf4] FROM [Table] WHERE [id] = 1"></asp:SqlDataSource>
     </asp:Content>
