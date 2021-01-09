@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="admin.aspx.cs" Inherits="asp.net_cms.index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="admin.aspx.cs"  %>
+
 
 <!DOCTYPE html>
 
@@ -47,20 +48,21 @@
                     <asp:Parameter Name="original_img" Type="String" />
                 </UpdateParameters>
             </asp:SqlDataSource>
-            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
-                <Columns>
-                    <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
-                    <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
-                    <asp:BoundField DataField="title " HeaderText="title " SortExpression="title " />
-                    <asp:BoundField DataField="paragraf1" HeaderText="paragraf1" SortExpression="paragraf1" />
-                    <asp:BoundField DataField="paragraf2" HeaderText="paragraf2" SortExpression="paragraf2" />
-                    <asp:BoundField DataField="paragraf3" HeaderText="paragraf3" SortExpression="paragraf3" />
-                    <asp:BoundField DataField="paragraf4" HeaderText="paragraf4" SortExpression="paragraf4" />
-                    <asp:BoundField DataField="img" HeaderText="img" SortExpression="img" />
-                </Columns>
-            </asp:GridView>
         </div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
+            <Columns>
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
+                <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
+                <asp:BoundField DataField="title " HeaderText="title " SortExpression="title " />
+                <asp:BoundField DataField="paragraf1" HeaderText="paragraf1" SortExpression="paragraf1" />
+                <asp:BoundField DataField="paragraf2" HeaderText="paragraf2" SortExpression="paragraf2" />
+                <asp:BoundField DataField="paragraf3" HeaderText="paragraf3" SortExpression="paragraf3" />
+                <asp:BoundField DataField="paragraf4" HeaderText="paragraf4" SortExpression="paragraf4" />
+                <asp:BoundField DataField="img" HeaderText="img" SortExpression="img" />
+            </Columns>
+        </asp:GridView>
         </form>
 </body>
 </html>
+
