@@ -11,6 +11,7 @@
     <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [image] FROM [Table] WHERE [id] = 1"></asp:SqlDataSource>
 &nbsp;
 
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Title" runat="server">
     <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource2"> 
