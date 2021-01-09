@@ -12,7 +12,7 @@
         <div>
             Centrum zarządzania&nbsp; danymi<br />
             <br />
-             <a href="/bezprzewodowe-ladowanie-iphonea.aspx">Powrót do strony głównej</a>
+             <a href="index.aspx">Powrót do strony głównej</a>
             <br />
             <br />
 &nbsp;<asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">

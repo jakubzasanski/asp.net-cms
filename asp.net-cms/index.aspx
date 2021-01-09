@@ -54,9 +54,9 @@ Samsung zaprezentował właśnie nową linię telewizorów na 2021 rok. O stagna
 
 
 
-
-             <a href="/placisz-za-youtube-premium.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
             <asp:Label ID="imageLabel" runat="server" Text='' />
+             <a href="/placisz-za-youtube-premium.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            
       
         </ItemTemplate>
     </asp:DataList>
