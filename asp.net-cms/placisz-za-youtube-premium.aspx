@@ -20,6 +20,7 @@
             
             
             <asp:Label ID="title_Label" runat="server" Text='<%# Eval("title_") %>' />
+
             <br />
 <br />
         </ItemTemplate>
