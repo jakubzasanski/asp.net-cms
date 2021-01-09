@@ -48,17 +48,55 @@ Samsung zaprezentował właśnie nową linię telewizorów na 2021 rok. O stagna
 
 <%--WPIS 3--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="NewsPhoto_3" runat="server">
-    <a href="/placisz-za-youtube-premium.aspx"><img src="assets/images/news/foto_mini/news_3.jpg" /></a>
+   
+    <asp:DataList ID="DataList3" runat="server" DataSourceID="SqlDataSource1">
+        <ItemTemplate>
+
+
+
+
+             <a href="/placisz-za-youtube-premium.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            <asp:Label ID="imageLabel" runat="server" Text='' />
+      
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT[image] FROM [Table] WHERE [id]  = 1"></asp:SqlDataSource>
+
 </asp:Content>
 
 <asp:Content ID="Content7" ContentPlaceHolderID="NewsTitle_3" runat="server">
-    <a href="/placisz-za-youtube-premium.aspx">Płacisz za YouTube Premium? Lepiej nie przestawaj</a>
+    <a href="/placisz-za-youtube-premium.aspx"><asp:DataList ID="DataList5" runat="server" DataSourceID="SqlDataSource3">
+        <ItemTemplate>
+            
+            <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' />
+            
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [title] FROM [Table] WHERE [id]=1"></asp:SqlDataSource>
+    </a>
+
 </asp:Content>
 
 <asp:Content ID="Content10" ContentPlaceHolderID="NewsDate_3" runat="server">
-01 - 01 - 2021
+<asp:DataList ID="DataList4" runat="server" DataSourceID="SqlDataSource2">
+        <ItemTemplate>
+           
+            <asp:Label ID="dateLabel" runat="server" Text='<%# Eval("date") %>' />
+
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [date] FROM [Table] WHERE [id] = 1"></asp:SqlDataSource>
+
 </asp:Content>
 
 <asp:Content ID="Content13" ContentPlaceHolderID="NewsShortDesc_3" runat="server">
-Sprawa się już nieco uspokoiła, ale różnica była zauważalna. Wyobraźcie sobie, Drodzy Czytelnicy, że Google chciało mnie koniecznie przymusić do powrotu do płacenia za YouTube Premium. W ramach eksperymentu postanowiłem... <a href="/placisz-za-youtube-premium.aspx"><u>więcej</u></a>
+<asp:DataList ID="DataList6" runat="server" DataSourceID="SqlDataSource4">
+    <ItemTemplate>
+        
+        <asp:Label ID="paragraf1Label" runat="server" Text='<%# Eval("paragraf1") %>' />
+
+    </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1] FROM [Table] WHERE [id] = 1"></asp:SqlDataSource>
+    ... <a href="/placisz-za-youtube-premium.aspx"><u>więcej</u></a>
 </asp:Content>
