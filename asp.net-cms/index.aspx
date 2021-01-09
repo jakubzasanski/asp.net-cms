@@ -31,22 +31,61 @@
 
 <%--WPIS 2--%>
 <asp:Content ID="Content1" ContentPlaceHolderID="NewsPhoto_2" runat="server">
-<a href="/technologia-micro-led.aspx"><img src="assets/images/news/foto_mini/news_2.jpg" /></a>
-</asp:Content>
 
+
+    <asp:DataList ID="DataList10" runat="server" DataSourceID="SqlDataSource2image">
+        <ItemTemplate>
+          
+           <asp:Label ID="titleLabel" runat="server" Text='' />
+            <a href="/technologia-micro-led.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource2image" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [image] FROM [Table] WHERE [id] = 2"></asp:SqlDataSource>
+    
+
+</asp:Content>
+        <%--title--%>
 <asp:Content ID="Content6" ContentPlaceHolderID="NewsTitle_2" runat="server">
-<a href="/technologia-micro-led.aspx">Technologia MICRO LED wkracza wreszcie do domów! Samsung pokazał nowe telewizory</a>
-</asp:Content>
+<asp:DataList ID="DataList7" runat="server" DataSourceID="SqlDataSource2Title">
+        <ItemTemplate>
+          
+           <a href="/technologia-micro-led.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
+            
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource2Title" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [title] FROM [Table] WHERE [id] = 2"></asp:SqlDataSource>
+    
 
+</asp:Content>
+        <%--date--%>
 <asp:Content ID="Content9" ContentPlaceHolderID="NewsDate_2" runat="server">
-06 - 01 - 2021
-</asp:Content>
+<asp:DataList ID="DataList8" runat="server" DataSourceID="SqlDataSource2Date">
+        <ItemTemplate>
+           
+            <asp:Label ID="dateLabel" runat="server" Text='<%# Eval("date") %>' />
 
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource2Date" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [date] FROM [Table] WHERE [id] = 2"></asp:SqlDataSource>
+
+</asp:Content>
+         <%--paragraf--%>
 <asp:Content ID="Content12" ContentPlaceHolderID="NewsShortDesc_2" runat="server">
-Samsung zaprezentował właśnie nową linię telewizorów na 2021 rok. O stagnacji nie ma mowy - pokazano nie tylko nowego QLEDA, ale koreański producent wszedł też wreszcie do świata domowych ekranów MICRO LED... <a href="/technologia-micro-led.aspx"><u>więcej</u></a>
+ <asp:DataList ID="DataList9" runat="server" DataSourceID="SqlDataSource2paragraf">
+        <ItemTemplate>
+            paragraf1:
+            <asp:Label ID="paragraf1Label" runat="server" Text='<%# Eval("paragraf1") %>' />
+            ...<a href="/technologia-micro-led.aspx"><u>więcej</u></a>
+
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource2paragraf" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1] FROM [Table] WHERE [id] = 2"></asp:SqlDataSource>
+
 </asp:Content>
 
 <%--WPIS 3--%>
+        <%--iamge--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="NewsPhoto_3" runat="server">
    
     <asp:DataList ID="DataList3" runat="server" DataSourceID="SqlDataSource1">
@@ -63,7 +102,7 @@ Samsung zaprezentował właśnie nową linię telewizorów na 2021 rok. O stagna
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT[image] FROM [Table] WHERE [id]  = 1"></asp:SqlDataSource>
 
 </asp:Content>
-
+        <%--title--%>
 <asp:Content ID="Content7" ContentPlaceHolderID="NewsTitle_3" runat="server">
     <a href="/placisz-za-youtube-premium.aspx"><asp:DataList ID="DataList5" runat="server" DataSourceID="SqlDataSource3">
         <ItemTemplate>
@@ -76,7 +115,7 @@ Samsung zaprezentował właśnie nową linię telewizorów na 2021 rok. O stagna
     </a>
 
 </asp:Content>
-
+        <%--date--%>
 <asp:Content ID="Content10" ContentPlaceHolderID="NewsDate_3" runat="server">
 <asp:DataList ID="DataList4" runat="server" DataSourceID="SqlDataSource2">
         <ItemTemplate>
@@ -88,7 +127,7 @@ Samsung zaprezentował właśnie nową linię telewizorów na 2021 rok. O stagna
     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [date] FROM [Table] WHERE [id] = 1"></asp:SqlDataSource>
 
 </asp:Content>
-
+        <%--paragraf--%>
 <asp:Content ID="Content13" ContentPlaceHolderID="NewsShortDesc_3" runat="server">
 <asp:DataList ID="DataList6" runat="server" DataSourceID="SqlDataSource4">
     <ItemTemplate>
