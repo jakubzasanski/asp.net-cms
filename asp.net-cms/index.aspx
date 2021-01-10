@@ -175,3 +175,172 @@
     <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1] FROM [Table] WHERE [id] = 1"></asp:SqlDataSource>
     ... <a href="/placisz-za-youtube-premium.aspx"><u>więcej</u></a>
 </asp:Content>
+
+
+<%--WPIS 4--%>
+        <%--iamge--%>
+<asp:Content ID="Content15" ContentPlaceHolderID="NewsPhoto_4" runat="server">
+
+
+    <asp:DataList ID="DataList13" runat="server" DataSourceID="SqlDataSource4image">
+        <ItemTemplate>
+          
+           <asp:Label ID="titleLabel" runat="server" Text='' />
+            <a href="/inpost.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource4image" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [image] FROM [Table] WHERE [id] = 4"></asp:SqlDataSource>
+    
+
+</asp:Content>
+        <%--title--%>
+<asp:Content ID="Content16" ContentPlaceHolderID="NewsTitle_4" runat="server">
+<asp:DataList ID="DataList14" runat="server" DataSourceID="SqlDataSource4Title">
+        <ItemTemplate>
+          
+           <a href="/inpost.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
+            
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource4Title" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [title] FROM [Table] WHERE [id] = 4"></asp:SqlDataSource>
+    
+
+</asp:Content>
+        <%--date--%>
+<asp:Content ID="Content17" ContentPlaceHolderID="NewsDate_4" runat="server">
+<asp:DataList ID="DataList15" runat="server" DataSourceID="SqlDataSource4Date">
+        <ItemTemplate>
+           
+            <asp:Label ID="dateLabel" runat="server" Text='<%# Eval("date") %>' />
+
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource4Date" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [date] FROM [Table] WHERE [id] = 4"></asp:SqlDataSource>
+
+</asp:Content>
+         <%--paragraf--%>
+<asp:Content ID="Content18" ContentPlaceHolderID="NewsShortDesc_4" runat="server">
+ <asp:DataList ID="DataList16" runat="server" DataSourceID="SqlDataSource4paragraf">
+        <ItemTemplate>
+            
+            <asp:Label ID="paragraf1Label" runat="server" Text='<%# Eval("paragraf1") %>' />
+            ...<a href="/inpost.aspx"><u>więcej</u></a>
+
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource4paragraf" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1] FROM [Table] WHERE [id] = 4"></asp:SqlDataSource>
+
+</asp:Content>
+
+<%--WPIS 5--%>
+        <%--iamge--%>
+<asp:Content ID="Content19" ContentPlaceHolderID="NewsPhoto_5" runat="server">
+
+
+    <asp:DataList ID="DataList17" runat="server" DataSourceID="SqlDataSource5image">
+        <ItemTemplate>
+          
+           <asp:Label ID="titleLabel" runat="server" Text='' />
+            <a href="/Techland.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource5image" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [image] FROM [Table] WHERE [id] = 5"></asp:SqlDataSource>
+    
+
+</asp:Content>
+        <%--title--%>
+<asp:Content ID="Content20" ContentPlaceHolderID="NewsTitle_5" runat="server">
+<asp:DataList ID="DataList18" runat="server" DataSourceID="SqlDataSource5Title">
+        <ItemTemplate>
+          
+           <a href="/Techland.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
+            
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource5Title" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [title] FROM [Table] WHERE [id] = 5"></asp:SqlDataSource>
+    
+
+</asp:Content>
+        <%--date--%>
+<asp:Content ID="Content21" ContentPlaceHolderID="NewsDate_5" runat="server">
+<asp:DataList ID="DataList19" runat="server" DataSourceID="SqlDataSource5Date">
+        <ItemTemplate>
+           
+            <asp:Label ID="dateLabel" runat="server" Text='<%# Eval("date") %>' />
+
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource5Date" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [date] FROM [Table] WHERE [id] = 5"></asp:SqlDataSource>
+
+</asp:Content>
+         <%--paragraf--%>
+<asp:Content ID="Content22" ContentPlaceHolderID="NewsShortDesc_5" runat="server">
+ <asp:DataList ID="DataList20" runat="server" DataSourceID="SqlDataSource5paragraf">
+        <ItemTemplate>
+            
+            <asp:Label ID="paragraf1Label" runat="server" Text='<%# Eval("paragraf1") %>' />
+            ...<a href="/Techland.aspx"><u>więcej</u></a>
+
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource5paragraf" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1] FROM [Table] WHERE [id] = 5"></asp:SqlDataSource>
+
+</asp:Content>
+
+<%--WPIS 5--%>
+        <%--iamge--%>
+<asp:Content ID="Content23" ContentPlaceHolderID="NewsPhoto_6" runat="server">
+
+
+    <asp:DataList ID="DataList21" runat="server" DataSourceID="SqlDataSource6image">
+        <ItemTemplate>
+          
+           <asp:Label ID="titleLabel" runat="server" Text='' />
+            <a href="/cyberpunk.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource6image" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [image] FROM [Table] WHERE [id] = 6"></asp:SqlDataSource>
+    
+
+</asp:Content>
+        <%--title--%>
+<asp:Content ID="Content24" ContentPlaceHolderID="NewsTitle_6" runat="server">
+<asp:DataList ID="DataList22" runat="server" DataSourceID="SqlDataSource6Title">
+        <ItemTemplate>
+          
+           <a href="/cyberpunk.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
+            
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource6Title" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [title] FROM [Table] WHERE [id] = 6"></asp:SqlDataSource>
+    
+
+</asp:Content>
+        <%--date--%>
+<asp:Content ID="Content25" ContentPlaceHolderID="NewsDate_6" runat="server">
+<asp:DataList ID="DataList23" runat="server" DataSourceID="SqlDataSource6Date">
+        <ItemTemplate>
+           
+            <asp:Label ID="dateLabel" runat="server" Text='<%# Eval("date") %>' />
+
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource6Date" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [date] FROM [Table] WHERE [id] = 6"></asp:SqlDataSource>
+
+</asp:Content>
+         <%--paragraf--%>
+<asp:Content ID="Content26" ContentPlaceHolderID="NewsShortDesc_6" runat="server">
+ <asp:DataList ID="DataList24" runat="server" DataSourceID="SqlDataSource6paragraf">
+        <ItemTemplate>
+            
+            <asp:Label ID="paragraf1Label" runat="server" Text='<%# Eval("paragraf1") %>' />
+            ...<a href="/cyberpunk.aspx"><u>więcej</u></a>
+
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource6paragraf" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1] FROM [Table] WHERE [id] = 6"></asp:SqlDataSource>
+
+</asp:Content>

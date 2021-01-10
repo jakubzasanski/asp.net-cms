@@ -64,6 +64,51 @@
                     <asp:ContentPlaceHolder ID="NewsShortDesc_3" runat="server"></asp:ContentPlaceHolder>
                 </div>
             </div>
+
+            <div class="news">
+                <div class="news__img">
+                    <asp:ContentPlaceHolder ID="NewsPhoto_4" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__date">
+                    <asp:ContentPlaceHolder ID="NewsDate_4" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__header">
+                    <asp:ContentPlaceHolder ID="NewsTitle_4" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__desc">
+                    <asp:ContentPlaceHolder ID="NewsShortDesc_4" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+             <div class="news">
+                <div class="news__img">
+                    <asp:ContentPlaceHolder ID="NewsPhoto_5" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__date">
+                    <asp:ContentPlaceHolder ID="NewsDate_5" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__header">
+                    <asp:ContentPlaceHolder ID="NewsTitle_5" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__desc">
+                    <asp:ContentPlaceHolder ID="NewsShortDesc_5" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+             <div class="news">
+                <div class="news__img">
+                    <asp:ContentPlaceHolder ID="NewsPhoto_6" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__date">
+                    <asp:ContentPlaceHolder ID="NewsDate_6" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__header">
+                    <asp:ContentPlaceHolder ID="NewsTitle_6" runat="server"></asp:ContentPlaceHolder>
+                </div>
+                <div class="news__desc">
+                    <asp:ContentPlaceHolder ID="NewsShortDesc_6" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
         </div>
 
     </div>

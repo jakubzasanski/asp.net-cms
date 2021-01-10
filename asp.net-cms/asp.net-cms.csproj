@@ -102,6 +102,9 @@
     <Content Include="technologia-micro-led.aspx" />
     <Content Include="placisz-za-youtube-premium.aspx" />
     <Content Include="admin.aspx" />
+    <Content Include="inpost.aspx" />
+    <Content Include="Techland.aspx" />
+    <Content Include="cyberpunk.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -163,6 +166,27 @@
     </Compile>
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inpost.aspx.cs">
+      <DependentUpon>inpost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inpost.aspx.designer.cs">
+      <DependentUpon>inpost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Techland.aspx.cs">
+      <DependentUpon>Techland.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Techland.aspx.designer.cs">
+      <DependentUpon>Techland.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cyberpunk.aspx.cs">
+      <DependentUpon>cyberpunk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cyberpunk.aspx.designer.cs">
+      <DependentUpon>cyberpunk.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
