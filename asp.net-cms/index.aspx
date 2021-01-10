@@ -9,27 +9,63 @@
 </asp:Content>
 
 <%--WPIS 1--%>
+        <%--iamge--%>
 <asp:Content ID="Content3" ContentPlaceHolderID="NewsPhoto_1" runat="server">
-    <a href="/bezprzewodowe-ladowanie-iphonea.aspx">
-        <img src="assets/images/news/foto_mini/news_1.jpg" />
-    </a>
-</asp:Content>
 
-<asp:Content ID="NewsTitle" ContentPlaceHolderID="NewsTitle_1" runat="server">
-    <a href="/bezprzewodowe-ladowanie-iphonea.aspx">
-        Bezprzewodowe ładowanie iPhone’a i Apple Watcha Macbookiem? Poproszę jak najszybciej!
-    </a>
-</asp:Content>
 
-<asp:Content ID="Content8" ContentPlaceHolderID="NewsDate_1" runat="server">
-06 - 01 - 2021
-</asp:Content>
+    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1image">
+        <ItemTemplate>
+          
+           <asp:Label ID="titleLabel" runat="server" Text='' />
+            <a href="/bezprzewodowe-ladowanie-iphonea.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource1image" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [image] FROM [Table] WHERE [id] = 3"></asp:SqlDataSource>
+    
 
-<asp:Content ID="Content11" ContentPlaceHolderID="NewsShortDesc_1" runat="server">
-Ładowanie iPhone'a i Apple Watcha bezpośrednio od Macbooka wydaje się idealnym rozwiązaniem dla wszystkich którzy mają dość tonięcia w kablach. Warto jednak mieć na uwadze... <a href="/bezprzewodowe-ladowanie-iphonea.aspx"><u>więcej</u></a>
+</asp:Content>
+        <%--title--%>
+<asp:Content ID="Content8" ContentPlaceHolderID="NewsTitle_1" runat="server">
+<asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource1Title">
+        <ItemTemplate>
+          
+           <a href="/bezprzewodowe-ladowanie-iphonea.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
+            
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource1Title" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [title] FROM [Table] WHERE [id] = 3"></asp:SqlDataSource>
+    
+
+</asp:Content>
+        <%--date--%>
+<asp:Content ID="Content11" ContentPlaceHolderID="NewsDate_1" runat="server">
+<asp:DataList ID="DataList11" runat="server" DataSourceID="SqlDataSource1Date">
+        <ItemTemplate>
+           
+            <asp:Label ID="dateLabel" runat="server" Text='<%# Eval("date") %>' />
+
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource1Date" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [date] FROM [Table] WHERE [id] = 3"></asp:SqlDataSource>
+
+</asp:Content>
+         <%--paragraf--%>
+<asp:Content ID="Content14" ContentPlaceHolderID="NewsShortDesc_1" runat="server">
+ <asp:DataList ID="DataList12" runat="server" DataSourceID="SqlDataSource1paragraf">
+        <ItemTemplate>
+            paragraf1:
+            <asp:Label ID="paragraf1Label" runat="server" Text='<%# Eval("paragraf1") %>' />
+            ...<a href="/technologia-micro-led.aspx"><u>więcej</u></a>
+
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource1paragraf" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1] FROM [Table] WHERE [id] = 3"></asp:SqlDataSource>
+
 </asp:Content>
 
 <%--WPIS 2--%>
+        <%--iamge--%>
 <asp:Content ID="Content1" ContentPlaceHolderID="NewsPhoto_2" runat="server">
 
 
