@@ -11,6 +11,8 @@
   
   #### Sposób użycia
   
+  # Po pierwszym uruchomieniu gulp watch odpala się automatycznie wraz z otwarciem projektu
+  
   1. Otwórz folder projektu w konsoli cmd (Wymagane uprawnienia administratora).
   2. Przy pierwszym użyciu zainstaluj paczki użyj komendy
    ```javascript
