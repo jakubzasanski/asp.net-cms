@@ -97,6 +97,10 @@
     <Content Include="assets\scss\_utilities\index.html" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
+    <Content Include="kontakt.aspx" />
+    <Content Include="o-nas.aspx" />
+    <Content Include="polityka-prywatnosci.aspx" />
+    <Content Include="regulamin.aspx" />
     <Content Include="Web.config" />
     <Content Include="bezprzewodowe-ladowanie-iphonea.aspx" />
     <Content Include="technologia-micro-led.aspx" />
@@ -124,12 +128,33 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="kontakt.aspx.cs">
+      <DependentUpon>kontakt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kontakt.aspx.designer.cs">
+      <DependentUpon>kontakt.aspx</DependentUpon>
+    </Compile>
     <Compile Include="news.master.cs">
       <DependentUpon>news.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="news.master.designer.cs">
       <DependentUpon>news.master</DependentUpon>
+    </Compile>
+    <Compile Include="o-nas.aspx.cs">
+      <DependentUpon>o-nas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="o-nas.aspx.designer.cs">
+      <DependentUpon>o-nas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="polityka-prywatnosci.aspx.cs">
+      <DependentUpon>polityka-prywatnosci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="polityka-prywatnosci.aspx.designer.cs">
+      <DependentUpon>polityka-prywatnosci.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Global.Master.cs">
@@ -145,6 +170,13 @@
     </Compile>
     <Compile Include="bezprzewodowe-ladowanie-iphonea.aspx.designer.cs">
       <DependentUpon>bezprzewodowe-ladowanie-iphonea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="regulamin.aspx.cs">
+      <DependentUpon>regulamin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="regulamin.aspx.designer.cs">
+      <DependentUpon>regulamin.aspx</DependentUpon>
     </Compile>
     <Compile Include="technologia-micro-led.aspx.cs">
       <DependentUpon>technologia-micro-led.aspx</DependentUpon>
@@ -204,6 +236,7 @@
     <Content Include="assets\scss\_components\_news.scss" />
     <Content Include="news.master" />
     <Content Include="assets\scss\news.scss" />
+    <Content Include="assets\scss\_components\_menu_left.scss" />
     <None Include="packages.config" />
     <Content Include="Global.Master" />
     <None Include="Web.Debug.config">
