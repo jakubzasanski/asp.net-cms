@@ -21,7 +21,7 @@
                     <td>
                         <asp:Label ID="Label2" runat="server" Text="Haslo"></asp:Label></td>
                     <td>
-                        <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox></td>
+                        <asp:TextBox ID="txtPassword" runat="server" TextMode="password"></asp:TextBox></td>
                 </tr>
                 <tr>
                     <td>

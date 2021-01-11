@@ -95,6 +95,7 @@
     <Content Include="assets\scss\index.html" />
     <Content Include="assets\scss\_components\index.html" />
     <Content Include="assets\scss\_utilities\index.html" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
     <Content Include="Login.aspx" />
@@ -108,6 +109,13 @@
     <Content Include="cyberpunk.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
