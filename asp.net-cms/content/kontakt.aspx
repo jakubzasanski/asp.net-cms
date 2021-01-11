@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/news.master" AutoEventWireup="true" CodeBehind="kontakt.aspx.cs" Inherits="asp.net_cms.kontakt" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/nested/news.master" AutoEventWireup="true" CodeBehind="kontakt.aspx.cs" Inherits="asp.net_cms.kontakt" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainPhoto" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Title" runat="server">
