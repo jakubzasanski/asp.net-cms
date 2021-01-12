@@ -95,6 +95,7 @@
     <Content Include="assets\scss\index.html" />
     <Content Include="assets\scss\_components\index.html" />
     <Content Include="assets\scss\_utilities\index.html" />
+    <Content Include="DaneLogowania.aspx" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
@@ -109,6 +110,13 @@
     <Content Include="cyberpunk.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DaneLogowania.aspx.cs">
+      <DependentUpon>DaneLogowania.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DaneLogowania.aspx.designer.cs">
+      <DependentUpon>DaneLogowania.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
