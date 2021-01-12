@@ -74,6 +74,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\admin.aspx" />
+    <Content Include="admin\index.html" />
+    <Content Include="admin\login.aspx" />
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
@@ -92,13 +95,11 @@
     <Content Include="assets\images\news\foto_mini\news_1.jpg" />
     <Content Include="assets\images\news\foto_mini\news_2.jpg" />
     <Content Include="assets\images\news\index.html" />
+    <Content Include="assets\index.html" />
     <Content Include="assets\scss\index.html" />
     <Content Include="assets\scss\_components\index.html" />
     <Content Include="assets\scss\_utilities\index.html" />
-    <Content Include="DaneLogowania.aspx" />
-    <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Login.aspx" />
     <Content Include="content\index.aspx" />
     <Content Include="content\kontakt.aspx" />
     <Content Include="content\o-nas.aspx" />
@@ -108,25 +109,45 @@
     <Content Include="content\bezprzewodowe-ladowanie-iphonea.aspx" />
     <Content Include="content\technologia-micro-led.aspx" />
     <Content Include="content\placisz-za-youtube-premium.aspx" />
-    <Content Include="admin.aspx" />
     <Content Include="content\inpost.aspx" />
     <Content Include="content\Techland.aspx" />
     <Content Include="content\cyberpunk.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DaneLogowania.aspx.cs">
-      <DependentUpon>DaneLogowania.aspx</DependentUpon>
+    <Compile Include="admin\admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DaneLogowania.aspx.designer.cs">
-      <DependentUpon>DaneLogowania.aspx</DependentUpon>
+    <Compile Include="admin\admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.aspx.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="admin\admin.master.cs">
+      <DependentUpon>admin.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Dashboard.aspx.designer.cs">
-      <DependentUpon>Dashboard.aspx</DependentUpon>
+    <Compile Include="admin\admin.master.designer.cs">
+      <DependentUpon>admin.master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\GlobalAdmin.Master.cs">
+      <DependentUpon>GlobalAdmin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\GlobalAdmin.Master.designer.cs">
+      <DependentUpon>GlobalAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\login.master.cs">
+      <DependentUpon>login.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\login.master.designer.cs">
+      <DependentUpon>login.master</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -144,13 +165,6 @@
     </Compile>
     <Compile Include="content\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="content\kontakt.aspx.cs">
       <DependentUpon>kontakt.aspx</DependentUpon>
@@ -216,13 +230,6 @@
     <Compile Include="content\placisz-za-youtube-premium.aspx.designer.cs">
       <DependentUpon>placisz-za-youtube-premium.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin.aspx.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin.aspx.designer.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
-    </Compile>
     <Compile Include="content\inpost.aspx.cs">
       <DependentUpon>inpost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -261,6 +268,10 @@
     <Content Include="nested\news.master" />
     <Content Include="assets\scss\news.scss" />
     <Content Include="assets\scss\_components\_menu_left.scss" />
+    <Content Include="admin\GlobalAdmin.Master" />
+    <Content Include="admin\admin.master" />
+    <Content Include="assets\scss\admin.scss" />
+    <Content Include="admin\login.master" />
     <None Include="packages.config" />
     <Content Include="Global.Master" />
     <None Include="Web.Debug.config">

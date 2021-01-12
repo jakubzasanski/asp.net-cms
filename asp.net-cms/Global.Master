@@ -24,7 +24,7 @@
                         <a href="/content/index.aspx" class="topNavbar__item">Strona główna</a>
                         <a href="/content/o-nas.aspx" class="topNavbar__item">O nas</a>
                         <a href="/content/kontakt.aspx" class="topNavbar__item">Kontakt</a>
-                        <a href="/admin.aspx" class="topNavbar__item">Zaloguj się</a>
+                        <a href="/admin/admin.aspx" class="topNavbar__item">Zaloguj się</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                         <ul>
                             <li><a href="/content/o-nas.aspx">O nas</a></li>
                             <li><a href="/content/kontakt.aspx">Kontakt</a></li>
-                            <li><a href="/admin.aspx">Konto</a></li>
+                            <li><a href="/admin/admin.aspx">Konto</a></li>
                         </ul>
                     </div>
 

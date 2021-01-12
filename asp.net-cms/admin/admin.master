@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/admin/GlobalAdmin.Master" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="asp.net_cms.admin.admin" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="content" runat="server">
+    <asp:ContentPlaceHolder ID="content" runat="server">
+
+     </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="AdminMenu" runat="server">
+     <div class="AdminMenu">
+        <asp:Button ID="Button1" runat="server" Text="Powrót do serwisu" OnClick="back_to_system" />
+        <asp:Button ID="btnLogout" runat="server" Text="Wyloguj" OnClick="btnLogout_Click" />
+     </div>
+</asp:Content>
+

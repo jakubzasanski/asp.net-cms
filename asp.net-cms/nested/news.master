@@ -15,7 +15,7 @@
                     <a href="/content/index.aspx" class="menuLeft__item">Strona główna</a>
                     <a href="/content/o-nas.aspx" class="menuLeft__item">O nas</a>
                     <a href="/content/kontakt.aspx" class="menuLeft__item">Kontakt</a>
-                    <a href="/admin.aspx" class="menuLeft__item">Zaloguj się</a>
+                    <a href="/admin/admin.aspx" class="menuLeft__item">Zaloguj się</a>
                 </div>
             </div>
         </div>

@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GlobalAdmin.master.cs" Inherits="asp.net_cms.admin.GlobalAdmin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="../assets/css/admin.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="top -flexRow">
+            <div>Panel Administracyjny</div>
+            <asp:ContentPlaceHolder ID="AdminMenu" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="-siteContainer">
+            <asp:ContentPlaceHolder ID="content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
