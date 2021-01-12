@@ -1,13 +1,23 @@
 ﻿<%@ Master Language="C#" MasterPageFile="~/Global.Master" AutoEventWireup="true" CodeBehind="news.master.cs" Inherits="asp.net_cms.news" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="CSS" runat="server">
-     <link href="./assets/css/news.css" rel="stylesheet" />
+     <link href="../assets/css/news.css" rel="stylesheet" />
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="server">
     <div class="-flexRow">
         <div class="-columnLeft">
-            menu
+            <div class="menuLeft">
+                <div class="menuLeft__header">
+                    Menu
+                </div>
+                <div>
+                    <a href="/content/index.aspx" class="menuLeft__item">Strona główna</a>
+                    <a href="/content/o-nas.aspx" class="menuLeft__item">O nas</a>
+                    <a href="/content/kontakt.aspx" class="menuLeft__item">Kontakt</a>
+                    <a href="/admin.aspx" class="menuLeft__item">Zaloguj się</a>
+                </div>
+            </div>
         </div>
         <div class="newsContainer">
             <div class="newsContainer__photo">

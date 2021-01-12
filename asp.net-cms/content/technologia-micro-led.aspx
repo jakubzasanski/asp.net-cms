@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/news.master" AutoEventWireup="true" CodeBehind="technologia-micro-led.aspx.cs" Inherits="asp.net_cms.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/nested/news.master" AutoEventWireup="true" CodeBehind="technologia-micro-led.aspx.cs" Inherits="asp.net_cms.WebForm2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainPhoto" runat="server">
    
 
@@ -6,7 +6,7 @@
     <ItemTemplate>
        
         <asp:Label ID="imageLabel" runat="server" Text='' />
-         <img src="assets/images/news/foto_main/<%# Eval("image") %>" />
+         <img src="/assets/images/news/foto_main/<%# Eval("image") %>" />
         <br />
 <br />
     </ItemTemplate>

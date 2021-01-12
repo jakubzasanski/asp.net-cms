@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/news.master" AutoEventWireup="true" CodeBehind="placisz-za-youtube-premium.aspx.cs" Inherits="asp.net_cms.WebForm3" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/nested/news.master" AutoEventWireup="true" CodeBehind="placisz-za-youtube-premium.aspx.cs" Inherits="asp.net_cms.WebForm3" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainPhoto" runat="server">
     <asp:DataList ID="DataList3" runat="server" DataSourceID="SqlDataSource3">
         <ItemTemplate>
             
-             <img src="assets/images/news/foto_main/<%# Eval("image") %>" /> <asp:Label ID="imageLabel" runat="server" Text='' />
+             <img src="/assets/images/news/foto_main/<%# Eval("image") %>" /> <asp:Label ID="imageLabel" runat="server" Text='' />
             <br />
 <br />
         </ItemTemplate>

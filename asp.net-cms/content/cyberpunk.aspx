@@ -1,6 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/news.master" AutoEventWireup="true" CodeBehind="bezprzewodowe-ladowanie-iphonea.aspx.cs" Inherits="asp.net_cms.WebForm1" %>
-
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/nested/news.master" AutoEventWireup="true" CodeBehind="cyberpunk.aspx.cs" Inherits="asp.net_cms.WebForm7" %>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainPhoto" runat="server">
    
 
@@ -8,12 +6,12 @@
     <ItemTemplate>
        
         <asp:Label ID="imageLabel" runat="server" Text='' />
-         <img src="assets/images/news/foto_main/<%# Eval("image") %>" />
+         <img src="/assets/images/news/foto_main/<%# Eval("image") %>" />
         <br />
 <br />
     </ItemTemplate>
     </asp:DataList>
-    <asp:SqlDataSource ID="SqlDataSourceImage" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [image] FROM [Table] WHERE [id] = 3"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSourceImage" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [image] FROM [Table] WHERE [id] = 6"></asp:SqlDataSource>
 
 
 </asp:Content>
@@ -27,7 +25,7 @@
 <br />
         </ItemTemplate>
     </asp:DataList>
-    <asp:SqlDataSource ID="SqlDataSourceTittle1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [title] FROM [Table] WHERE [id] =3"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSourceTittle1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [title] FROM [Table] WHERE [id] =6"></asp:SqlDataSource>
 &nbsp;
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="Content" runat="server">
@@ -40,7 +38,7 @@
 <br />
     </ItemTemplate>
     </asp:DataList>
-    <asp:SqlDataSource ID="SqlDataSourceParagraf1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1] FROM [Table] WHERE [id] = 3"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSourceParagraf1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1] FROM [Table] WHERE [id] =6"></asp:SqlDataSource>
     <%--PARAGRAF 2--%>
     <asp:DataList ID="DataList3" runat="server" DataSourceID="SqlDataSourceParagraf2">
     <ItemTemplate>
@@ -50,7 +48,7 @@
 <br />
     </ItemTemplate>
     </asp:DataList>
-    <asp:SqlDataSource ID="SqlDataSourceParagraf2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf2] FROM [Table] WHERE [id] = 3"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSourceParagraf2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf2] FROM [Table] WHERE [id] = 6"></asp:SqlDataSource>
 
      <%--PARAGRAF 3--%>
         <asp:DataList ID="DataList4" runat="server" DataSourceID="SqlDataSourceParagraf3">
@@ -61,7 +59,7 @@
 <br />
     </ItemTemplate>
     </asp:DataList>
-    <asp:SqlDataSource ID="SqlDataSourceParagraf3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf3] FROM [Table] WHERE [id] = 3"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSourceParagraf3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf3] FROM [Table] WHERE [id] = 6"></asp:SqlDataSource>
 
     <%--PARAGRAF 3--%>
      <asp:DataList ID="DataList6" runat="server" DataSourceID="SqlDataSourceParagraf4">
@@ -72,46 +70,7 @@
 <br />
     </ItemTemplate>
     </asp:DataList>
-    <asp:SqlDataSource ID="SqlDataSourceParagraf4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf4] FROM [Table] WHERE [id] = 3"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSourceParagraf4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf4] FROM [Table] WHERE [id] = 6"></asp:SqlDataSource>
 
 
 </asp:Content>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

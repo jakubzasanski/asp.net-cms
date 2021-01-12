@@ -98,16 +98,24 @@
     <Content Include="DaneLogowania.aspx" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
+<<<<<<< HEAD
     <Content Include="index.aspx" />
     <Content Include="Login.aspx" />
+=======
+    <Content Include="content\index.aspx" />
+    <Content Include="content\kontakt.aspx" />
+    <Content Include="content\o-nas.aspx" />
+    <Content Include="content\polityka-prywatnosci.aspx" />
+    <Content Include="content\regulamin.aspx" />
+>>>>>>> 7b00ad8fa7f307034fb922ae089f2124fc32e248
     <Content Include="Web.config" />
-    <Content Include="bezprzewodowe-ladowanie-iphonea.aspx" />
-    <Content Include="technologia-micro-led.aspx" />
-    <Content Include="placisz-za-youtube-premium.aspx" />
+    <Content Include="content\bezprzewodowe-ladowanie-iphonea.aspx" />
+    <Content Include="content\technologia-micro-led.aspx" />
+    <Content Include="content\placisz-za-youtube-premium.aspx" />
     <Content Include="admin.aspx" />
-    <Content Include="inpost.aspx" />
-    <Content Include="Techland.aspx" />
-    <Content Include="cyberpunk.aspx" />
+    <Content Include="content\inpost.aspx" />
+    <Content Include="content\Techland.aspx" />
+    <Content Include="content\cyberpunk.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DaneLogowania.aspx.cs">
@@ -127,20 +135,21 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="home.master.cs">
+    <Compile Include="nested\home.master.cs">
       <DependentUpon>home.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="home.master.designer.cs">
+    <Compile Include="nested\home.master.designer.cs">
       <DependentUpon>home.master</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
+    <Compile Include="content\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
+    <Compile Include="content\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -149,11 +158,35 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="news.master.cs">
+=======
+    <Compile Include="content\kontakt.aspx.cs">
+      <DependentUpon>kontakt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content\kontakt.aspx.designer.cs">
+      <DependentUpon>kontakt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="nested\news.master.cs">
+>>>>>>> 7b00ad8fa7f307034fb922ae089f2124fc32e248
       <DependentUpon>news.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="news.master.designer.cs">
+    <Compile Include="nested\news.master.designer.cs">
       <DependentUpon>news.master</DependentUpon>
+    </Compile>
+    <Compile Include="content\o-nas.aspx.cs">
+      <DependentUpon>o-nas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content\o-nas.aspx.designer.cs">
+      <DependentUpon>o-nas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content\polityka-prywatnosci.aspx.cs">
+      <DependentUpon>polityka-prywatnosci.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content\polityka-prywatnosci.aspx.designer.cs">
+      <DependentUpon>polityka-prywatnosci.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Global.Master.cs">
@@ -163,25 +196,32 @@
     <Compile Include="Global.Master.designer.cs">
       <DependentUpon>Global.Master</DependentUpon>
     </Compile>
-    <Compile Include="bezprzewodowe-ladowanie-iphonea.aspx.cs">
+    <Compile Include="content\bezprzewodowe-ladowanie-iphonea.aspx.cs">
       <DependentUpon>bezprzewodowe-ladowanie-iphonea.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="bezprzewodowe-ladowanie-iphonea.aspx.designer.cs">
+    <Compile Include="content\bezprzewodowe-ladowanie-iphonea.aspx.designer.cs">
       <DependentUpon>bezprzewodowe-ladowanie-iphonea.aspx</DependentUpon>
     </Compile>
-    <Compile Include="technologia-micro-led.aspx.cs">
+    <Compile Include="content\regulamin.aspx.cs">
+      <DependentUpon>regulamin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content\regulamin.aspx.designer.cs">
+      <DependentUpon>regulamin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content\technologia-micro-led.aspx.cs">
       <DependentUpon>technologia-micro-led.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="technologia-micro-led.aspx.designer.cs">
+    <Compile Include="content\technologia-micro-led.aspx.designer.cs">
       <DependentUpon>technologia-micro-led.aspx</DependentUpon>
     </Compile>
-    <Compile Include="placisz-za-youtube-premium.aspx.cs">
+    <Compile Include="content\placisz-za-youtube-premium.aspx.cs">
       <DependentUpon>placisz-za-youtube-premium.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="placisz-za-youtube-premium.aspx.designer.cs">
+    <Compile Include="content\placisz-za-youtube-premium.aspx.designer.cs">
       <DependentUpon>placisz-za-youtube-premium.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin.aspx.cs">
@@ -191,25 +231,25 @@
     <Compile Include="admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="inpost.aspx.cs">
+    <Compile Include="content\inpost.aspx.cs">
       <DependentUpon>inpost.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="inpost.aspx.designer.cs">
+    <Compile Include="content\inpost.aspx.designer.cs">
       <DependentUpon>inpost.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Techland.aspx.cs">
+    <Compile Include="content\Techland.aspx.cs">
       <DependentUpon>Techland.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Techland.aspx.designer.cs">
+    <Compile Include="content\Techland.aspx.designer.cs">
       <DependentUpon>Techland.aspx</DependentUpon>
     </Compile>
-    <Compile Include="cyberpunk.aspx.cs">
+    <Compile Include="content\cyberpunk.aspx.cs">
       <DependentUpon>cyberpunk.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="cyberpunk.aspx.designer.cs">
+    <Compile Include="content\cyberpunk.aspx.designer.cs">
       <DependentUpon>cyberpunk.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -220,14 +260,15 @@
     <Content Include="assets\scss\_utilities\_reset.scss" />
     <Content Include="assets\scss\_utilities\_helpers.scss" />
     <Content Include="assets\scss\_components\_header.scss" />
-    <Content Include="home.master" />
+    <Content Include="nested\home.master" />
     <Content Include="assets\scss\_components\_footer.scss" />
     <Content Include="assets\scss\home.scss" />
     <Content Include="assets\scss\_components\_homeBanner.scss" />
     <Content Include="assets\scss\_utilities\_theme.scss" />
     <Content Include="assets\scss\_components\_news.scss" />
-    <Content Include="news.master" />
+    <Content Include="nested\news.master" />
     <Content Include="assets\scss\news.scss" />
+    <Content Include="assets\scss\_components\_menu_left.scss" />
     <None Include="packages.config" />
     <Content Include="Global.Master" />
     <None Include="Web.Debug.config">

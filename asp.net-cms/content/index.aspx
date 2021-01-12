@@ -1,8 +1,8 @@
-﻿<%@ Page Title="Strona główna - Portal Informacyjny" Language="C#" MasterPageFile="~/home.master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp.net_cms.index1" %>
+﻿<%@ Page Title="Strona główna - Portal Informacyjny" Language="C#" MasterPageFile="~/nested/home.master" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp.net_cms.index1" %>
 
 <%--Banner--%>
 <asp:Content ID="Content4" ContentPlaceHolderID="homeBanner__img" runat="server">
-    <img src="assets/images/background.jpg" />
+    <img src="../assets/images/background.jpg" />
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="homeBanner__text" runat="server">
     Informacje
@@ -17,7 +17,7 @@
         <ItemTemplate>
           
            <asp:Label ID="titleLabel" runat="server" Text='' />
-            <a href="/bezprzewodowe-ladowanie-iphonea.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            <a href="/content/bezprzewodowe-ladowanie-iphonea.aspx"><img src="../assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
             
         </ItemTemplate>
     </asp:DataList>
@@ -30,7 +30,7 @@
 <asp:DataList ID="DataList2" runat="server" DataSourceID="SqlDataSource1Title">
         <ItemTemplate>
           
-           <a href="/bezprzewodowe-ladowanie-iphonea.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
+           <a href="/content/bezprzewodowe-ladowanie-iphonea.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
             
         </ItemTemplate>
     </asp:DataList>
@@ -56,7 +56,7 @@
         <ItemTemplate>
             paragraf1:
             <asp:Label ID="paragraf1Label" runat="server" Text='<%# Eval("paragraf1") %>' />
-            ...<a href="/technologia-micro-led.aspx"><u>więcej</u></a>
+            ...<a href="/content/technologia-micro-led.aspx"><u>więcej</u></a>
 
         </ItemTemplate>
     </asp:DataList>
@@ -73,7 +73,7 @@
         <ItemTemplate>
           
            <asp:Label ID="titleLabel" runat="server" Text='' />
-            <a href="/technologia-micro-led.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            <a href="/content/technologia-micro-led.aspx"><img src="../assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
             
         </ItemTemplate>
     </asp:DataList>
@@ -86,7 +86,7 @@
 <asp:DataList ID="DataList7" runat="server" DataSourceID="SqlDataSource2Title">
         <ItemTemplate>
           
-           <a href="/technologia-micro-led.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
+           <a href="/content/technologia-micro-led.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
             
         </ItemTemplate>
     </asp:DataList>
@@ -112,7 +112,7 @@
         <ItemTemplate>
             paragraf1:
             <asp:Label ID="paragraf1Label" runat="server" Text='<%# Eval("paragraf1") %>' />
-            ...<a href="/technologia-micro-led.aspx"><u>więcej</u></a>
+            ...<a href="/content/technologia-micro-led.aspx"><u>więcej</u></a>
 
         </ItemTemplate>
     </asp:DataList>
@@ -130,7 +130,7 @@
 
 
             <asp:Label ID="imageLabel" runat="server" Text='' />
-             <a href="/placisz-za-youtube-premium.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+             <a href="/content/placisz-za-youtube-premium.aspx"><img src="../assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
             
       
         </ItemTemplate>
@@ -140,7 +140,7 @@
 </asp:Content>
         <%--title--%>
 <asp:Content ID="Content7" ContentPlaceHolderID="NewsTitle_3" runat="server">
-    <a href="/placisz-za-youtube-premium.aspx"><asp:DataList ID="DataList5" runat="server" DataSourceID="SqlDataSource3">
+    <a href="/content/placisz-za-youtube-premium.aspx"><asp:DataList ID="DataList5" runat="server" DataSourceID="SqlDataSource3">
         <ItemTemplate>
             
             <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' />
@@ -173,7 +173,7 @@
     </ItemTemplate>
     </asp:DataList>
     <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [paragraf1] FROM [Table] WHERE [id] = 1"></asp:SqlDataSource>
-    ... <a href="/placisz-za-youtube-premium.aspx"><u>więcej</u></a>
+    ... <a href="/content/placisz-za-youtube-premium.aspx"><u>więcej</u></a>
 </asp:Content>
 
 
@@ -186,7 +186,7 @@
         <ItemTemplate>
           
            <asp:Label ID="titleLabel" runat="server" Text='' />
-            <a href="/inpost.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            <a href="/content/inpost.aspx"><img src="../assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
             
         </ItemTemplate>
     </asp:DataList>
@@ -199,7 +199,7 @@
 <asp:DataList ID="DataList14" runat="server" DataSourceID="SqlDataSource4Title">
         <ItemTemplate>
           
-           <a href="/inpost.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
+           <a href="/content/inpost.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
             
         </ItemTemplate>
     </asp:DataList>
@@ -225,7 +225,7 @@
         <ItemTemplate>
             
             <asp:Label ID="paragraf1Label" runat="server" Text='<%# Eval("paragraf1") %>' />
-            ...<a href="/inpost.aspx"><u>więcej</u></a>
+            ...<a href="/content/inpost.aspx"><u>więcej</u></a>
 
         </ItemTemplate>
     </asp:DataList>
@@ -242,7 +242,7 @@
         <ItemTemplate>
           
            <asp:Label ID="titleLabel" runat="server" Text='' />
-            <a href="/Techland.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            <a href="/content/Techland.aspx"><img src="../assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
             
         </ItemTemplate>
     </asp:DataList>
@@ -255,7 +255,7 @@
 <asp:DataList ID="DataList18" runat="server" DataSourceID="SqlDataSource5Title">
         <ItemTemplate>
           
-           <a href="/Techland.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
+           <a href="/content/Techland.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
             
         </ItemTemplate>
     </asp:DataList>
@@ -281,7 +281,7 @@
         <ItemTemplate>
             
             <asp:Label ID="paragraf1Label" runat="server" Text='<%# Eval("paragraf1") %>' />
-            ...<a href="/Techland.aspx"><u>więcej</u></a>
+            ...<a href="/content/Techland.aspx"><u>więcej</u></a>
 
         </ItemTemplate>
     </asp:DataList>
@@ -298,7 +298,7 @@
         <ItemTemplate>
           
            <asp:Label ID="titleLabel" runat="server" Text='' />
-            <a href="/cyberpunk.aspx"><img src="assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
+            <a href="/content/cyberpunk.aspx"><img src="../assets/images/news/foto_mini/<%# Eval("image") %>" /></a>
             
         </ItemTemplate>
     </asp:DataList>
@@ -311,7 +311,7 @@
 <asp:DataList ID="DataList22" runat="server" DataSourceID="SqlDataSource6Title">
         <ItemTemplate>
           
-           <a href="/cyberpunk.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
+           <a href="/content/cyberpunk.aspx"> <asp:Label ID="titleLabel" runat="server" Text='<%# Eval("title") %>' /> </a>
             
         </ItemTemplate>
     </asp:DataList>
@@ -337,7 +337,7 @@
         <ItemTemplate>
             
             <asp:Label ID="paragraf1Label" runat="server" Text='<%# Eval("paragraf1") %>' />
-            ...<a href="/cyberpunk.aspx"><u>więcej</u></a>
+            ...<a href="/content/cyberpunk.aspx"><u>więcej</u></a>
 
         </ItemTemplate>
     </asp:DataList>

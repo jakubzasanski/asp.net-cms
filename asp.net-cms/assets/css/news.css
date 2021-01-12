@@ -1,3 +1,15 @@
+.menuLeft__header {
+  background-color: #0094ff;
+  color: #fff;
+  font-weight: 900;
+  padding: 10px 15px;
+  text-transform: uppercase; }
+
+.menuLeft__item {
+  display: block;
+  padding: 15px 15px;
+  border-bottom: 1px solid #dfdfdf; }
+
 .newsContainer p {
   font-size: 18px;
   margin-bottom: 25px; }
