@@ -98,16 +98,12 @@
     <Content Include="DaneLogowania.aspx" />
     <Content Include="Dashboard.aspx" />
     <Content Include="Global.asax" />
-<<<<<<< HEAD
-    <Content Include="index.aspx" />
     <Content Include="Login.aspx" />
-=======
     <Content Include="content\index.aspx" />
     <Content Include="content\kontakt.aspx" />
     <Content Include="content\o-nas.aspx" />
     <Content Include="content\polityka-prywatnosci.aspx" />
     <Content Include="content\regulamin.aspx" />
->>>>>>> 7b00ad8fa7f307034fb922ae089f2124fc32e248
     <Content Include="Web.config" />
     <Content Include="content\bezprzewodowe-ladowanie-iphonea.aspx" />
     <Content Include="content\technologia-micro-led.aspx" />
@@ -149,7 +145,6 @@
     <Compile Include="content\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -157,8 +152,6 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="news.master.cs">
-=======
     <Compile Include="content\kontakt.aspx.cs">
       <DependentUpon>kontakt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -167,7 +160,6 @@
       <DependentUpon>kontakt.aspx</DependentUpon>
     </Compile>
     <Compile Include="nested\news.master.cs">
->>>>>>> 7b00ad8fa7f307034fb922ae089f2124fc32e248
       <DependentUpon>news.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
