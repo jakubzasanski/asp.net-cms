@@ -16,7 +16,8 @@ namespace asp.net_cms
             lblErrorMessage.Visible = false;
         }
 
-        protected void btnLogin_CLick(object sender, EventArgs e) 
+
+        protected void btnLogin_Click1(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
@@ -24,15 +25,15 @@ namespace asp.net_cms
             SqlCommand com = new SqlCommand(checkuser, conn);
             int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
             conn.Close();
-            if(temp == 1)
+            if (temp == 1)
             {
                 conn.Open();
-                string checkPasswordQuery = "select password from Login where'" + txtPassword.Text + "'";
+                string checkPasswordQuery = "select password from Login where UserName='" + txtLogin.Text + "'";
                 SqlCommand passComm = new SqlCommand(checkPasswordQuery, conn);
-                string password = passComm.ExecuteScalar().ToString().Replace(" ", "");
-                if(password == txtPassword.Text)
+                string password = passComm.ExecuteScalar().ToString();
+                if (password == txtPassword.Text)
                 {
-                    Response.Redirect("Dashboard.aspx");
+                    Response.Redirect("admin.aspx");
                 }
                 else
                 {
@@ -43,7 +44,6 @@ namespace asp.net_cms
             {
                 lblErrorMessage.Visible = true;
             }
-
         }
     }
 }
