@@ -7,4 +7,8 @@
      </asp:ContentPlaceHolder>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="AdminMenu" runat="server">
+     <div class="AdminMenu">
+        <asp:Button ID="Button1" runat="server" Text="Powrót do serwisu" OnClick="back_to_system" />
+     </div>
 </asp:Content>
+

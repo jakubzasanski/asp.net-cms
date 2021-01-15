@@ -13,5 +13,10 @@ namespace asp.net_cms.admin
         {
 
         }
+
+        protected void back_to_system(object sender, EventArgs e)
+        {
+            Response.Redirect("/content/index.aspx");
+        }
     }
 }
