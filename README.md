@@ -1,5 +1,12 @@
 # asp.net-cms
 
+# Błąd: Could not find a part of the path … bin\roslyn\csc.exe
+
+### Naprawa
+
+1. Otwarcie bazy danych i jednej z tabeli
+2. Odświeżenie ekploatora rozwiązan - widoku folderu
+3. Odświeżenie łącza przeglądarki (zaraz koło przycisku zielonej strzałki - debuga plików)
 
 
 # Instrukcja GULP & SASS
